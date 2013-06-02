@@ -9,10 +9,10 @@ How to use:
 /calc <first value> <operator> <second value>
 
 operator:
+    - -
+    - +
     - *
     - /
-    - +
-    - -
 
 Credits:
 ========
