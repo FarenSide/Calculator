@@ -62,27 +62,27 @@ class Calculator implements Plugin{
 			    		case "+":
 			    		    $result = $firstValue + $secondValue;
 			    		    console("The result is: $result");
-                            break;
+                                            break;
 			    		case "-":
-                            $result = $firstValue - $secondValue;
+                                            $result = $firstValue - $secondValue;
 			    		    console("The result is: $result");
-                            break;
+                                            break;
 			    		case "*":
-                            $result = $firstValue * $secondValue;
+                                            $result = $firstValue * $secondValue;
 			    		    console("The result is: $result");
-                            break;
+                                            break;
 			    		case "/":
 			    		    $result = $firstValue / $secondValue;
 			    		    console("The result is: $result");
-                            break;
+                                            break;
 			    		default:
 			    		    if (($issuer instanceof Player)) {
 			    	            $this->api->chat->sendTo(false, "[Calculator] Usage: /calc <firstValue> <operator> <secondValue>", $issuer->username);
-                                break;
+                                            break;
 			                   }
 			                   else{
 			    	               console("[Calculator] Usage: /calc <firstValue> <operator> <secondValue>");
-                                   break;
+                                               break;
 			                   }	
 			                  
 			    	}
