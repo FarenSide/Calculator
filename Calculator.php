@@ -7,7 +7,7 @@ description=Adds a calculator to the server
 version=0.1
 author=Junyi00
 class=PlayerActionsRecorder
-apiversion=7
+apiversion=8
 */
 
 
@@ -23,7 +23,7 @@ class PlayerActionsRecorder implements Plugin{
 	
 	public function __destruct(){}
 	
-	public function Calculator($cmd, $arg) {
+	public function Calculator($cmd, $arg, $issuer) {
 		
 		switch($cmd) {
 			
