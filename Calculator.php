@@ -60,18 +60,19 @@ class PlayerActionsRecorder implements Plugin{
 			    		
 			    		case "+":
 			    		    $result = $firstValue + $secondValue;
-			    		    if (($issuer istanceof Player)) {
+			    		    if (($issuer instanceof Player)) {
 			    		    	$issuer->sendChat("The result is: $result");
-                                		break;
+                                break;
 			    		    }
 			    		    else {
 			    		    	console("The result is: $result");
 			    		    	break;
 			    		    } //done with +
+			    		    break;
 			    		    
 			    		case "-":
                             $result = $firstValue - $secondValue;
-			    		    if (($issuer istanceof Player)) {
+			    		    if (($issuer instanceof Player)) {
 			    		    	$issuer->sendChat("The result is: $result");
                                 			break;
 			    		    }
@@ -82,7 +83,7 @@ class PlayerActionsRecorder implements Plugin{
 			    		    
 			    		case "*":
                             $result = $firstValue * $secondValue;
-			    		    if (($issuer istanceof Player)) {
+			    		    if (($issuer instanceof Player)) {
 			    		    	$issuer->sendChat("The result is: $result");
                                 		break;
 			    		    }
@@ -93,7 +94,7 @@ class PlayerActionsRecorder implements Plugin{
 			    		    
 			    		case "/":
 			    		    $result = $firstValue / $secondValue;
-			    		    if (($issuer istanceof Player)) {
+			    		    if (($issuer instanceof Player)) {
 			    		    	$issuer->sendChat("The result is: $result");
                                 		break;
 			    		    }
@@ -114,15 +115,6 @@ class PlayerActionsRecorder implements Plugin{
 			    	}
 			    	
 			    }	
-			    
-			default:
-			    if (($issuer instanceof Player)) {
-			    	 $issuer.sendChat("[Calculator] Usage: /calc <firstValue> <operator> <secondValue>");
-			    }
-			    else{
-			    	console("[Calculator] Usage: /calc <firstValue> <operator> <secondValue>");
-                                break;
-			    }	  
 			
 		}
 		
