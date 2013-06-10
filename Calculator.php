@@ -4,7 +4,7 @@
 __PocketMine Plugin__
 name=Calculator
 description=Adds a calculator to the server
-version=0.1
+version=1.1
 author=Junyi00
 class=PlayerActionsRecorder
 apiversion=8
